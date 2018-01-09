@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文本类的属性</title>
+	<style type="text/css">
+	body {font-family: "Times New Roman","微软雅黑";font-size: 24px; color: #f00;font-weight: bolder;font-style: oblique;text-align: justify;line-height: 60px;}
+	h1{font-style: normal;}
+	p {text-indent: 48px;font-style: normal;font-weight: bold;}
+
+	</style>
+</head>
+<body>
+	<h1>标题</h1>
+	<p>
+		导读:据美国资深记者沃尔夫出版的新书《烈焰与怒火：特朗普白宫内幕》介绍，特朗普团队内部冲突不断，其中还有不少篇幅谈及美国“第一女儿”伊万卡及“第一女婿”库什纳，并且透露伊万卡有意参选美国总统。
+	</p>
+	
+		
+		Washington (CNN) — Ivanka Trump and her husband, Jared Kushner, made a deal when they came to Washington to serve in the White House that the first daughter would become the first female president if the opportunity arose, according to a forthcoming book obtained by The Guardian.
+	
+
+</body>
+</html>
+<!-- 
+文本类属性
+一、font-family：字体类型
+语法：{font-family：字体1，字体2，字体3；}
+
+说明：浏览器首先会寻找字体1，存在则使用，不存在则寻找字体2，不存在2的话寻找字体3.若都不存在则按系统默认显示
+
+当字体是中文字体时需加双引号
+当英文字体中有空格时需加双引号 “timesnewRoman”
+当英文字体只有一个单词组成则不需要加双引号
+
+二、font-weight：字体加粗
+语法： {font-weight：bolder/bold/normal/100-900;}
+说明：
+bolder（更粗的）、bold（加粗）、normal（正常）
+在CSS规范中，把字体的粗细分为九个等级，分别为100-900，其中100对应最轻的字体变形，而900对应最重的字体变形，一般500常规字体，600-900加粗字体
+
+三、font-style:字体倾斜
+语法：{font-style：italic/oblique/normal；}
+说明：
+italic和oblique都标识倾斜，但是oblique的倾斜幅度更大一些。但是一般浏览器对他们的区分不是很明显
+
+四、text-align :水平对其方式
+语法：{text-align:left/right/center/justify}
+说明：
+justify对内容以两端边界线对其显示
+
+五、line-height：行间距
+语法：{line-height：normal/数值}
+说明：
+当单行文本的行高等于容器高度时，可实现单行文本在容器中垂直方向居中对齐
+当单行文本的行高小于容器高度时，可实现单行文本在容器中垂直中齐以上任意位置的定位；
+当单行文本的行高大于容器高度时，可实现文本在容器中垂直中齐一下的任意位置的定位（IE6及其一下版本存在兼容性问题）
+
+六、text-decoration;文本修饰
+语法：{text-decoration:none/underline/overline/line-through;}
+
+七、text-indext:首行缩进
+语法：{text-indent:数值；}
+说明：
+text-indent可以取负值，可实现隐藏文本，悬挂缩进
+text-indent属性只对第一行起作用，若第一行不是文本则没有变化
+ -->

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景属性</title>
+	<style type="text/css">
+	.box1 {border: 5px #000 solid; width: 500px;height: 500px;background-color: #f00;margin-bottom: 20px;background-image: url(images/background_icon.png);}
+	.box2 {border: 5px #000 solid; width: 500px;height: 500px;background-color: #f00;}
+	</style>
+</head>
+<body>
+	<div class = "box1">
+		<img src="images/background_icon.png">
+		<h1>背景属性</h1>
+	</div>
+
+	<div class = "box2">
+		<img src="images/test.png">
+		<h1>背景属性</h1>
+		<img src="images/test.png">
+	</div>
+</body>
+</html>
+<!-- 
+
+一、background-color：背景颜色
+语法：{background-color：颜色值；}
+
+
+二、background-image:背景图片的设置
+语法：{background-image：url(背景图片的路径及全称)；}
+说明：
+网页上有两种图片形式：插入图片、背景图片；
+插入图片：属于网页内容，也就是结构
+背景图：属于网页的表现，背景图上可以显示文字、插入图片、表格等。
+
+容器尺寸等于图片尺寸，背景图片正好显示在容器中；
+容器尺寸大于背景图片，背景图片将默认平铺，直至铺满元素；
+容器尺寸小鱼图片尺寸，只显示元素范围内的背景图
+
+三、background-repeat：背景图片的平铺属性
+语法：{background-repeat：no-repeat/repeat/repeat-x/preat-y;}
+说明：no-repeat:不平铺
+     repeat：平铺
+     repeat-x:横向平铺
+     repeat-y:纵向平铺
+
+四、background-position：背景图片的位置属性
+语法：{background-position：值1 值2；}
+说明：值1：水平方向上的对齐方式（left/center/right）或值
+     值2：垂直方向上的对齐方式（top/center/bottom） 或值
+     当两个值都是center的时候写一个值就可以代表的是水平位置和垂直位置
+     向左方向、向上方向都是负值
+
+五、背景属性的缩写
+语法：{background：属性值1 属性值2 属性值3；}
+例：background：#背景色 URL（图片路径） no-repeat center top
+
+ -->

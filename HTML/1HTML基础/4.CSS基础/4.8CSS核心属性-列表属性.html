@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>列表属性</title>
+	<style type="text/css">
+	.u1 li{list-style-type: circle;}
+	.u2 li{list-style-image: url(images/list_icon.png); font-size: 24px;list-style-position: inside;}
+	.u3{border: 1px #000 solid;}
+	.u3 li{border: 1px #f00 solid;list-style-position: inside;}
+	.u4 li{list-style: none;;}
+	</style>
+</head>
+<body>
+	<ul class = "u1">
+		<li>列表1-1</li>
+		<li>列表1-2</li>
+		<li>列表1-3</li>
+		<li>列表1-4</li>
+	</ul>
+
+	<ul class = "u2">
+		<li>列表2-1</li>
+		<li>列表2-2</li>
+		<li>列表2-3</li>
+		<li>列表2-4</li>
+	</ul>
+
+	<ul class = "u3">
+		<li>列表3-1</li>
+		<li>列表3-2</li>
+		<li>列表3-3</li>
+		<li>列表3-4</li>
+	</ul>
+	
+	<ul class = "u4">
+		<li>列表4-1</li>
+		<li>列表4-2</li>
+		<li>列表4-3</li>
+		<li>列表4-4</li>
+	</ul>
+
+</body>
+</html>
+<!-- 
+列表的属性
+语法： {list-style-type:diss(实心圆)/cicle(空心圆)/square(实心放块)/none(无符号)；}
+说明：定义列表符号样式
+
+语法：{list-style-image：url（图片路径及全称）;}
+说明：使用自定义图片作为列表符号
+
+语法：{list-style-position：outside（外边）/inside（里边）;}
+说明：第一列表符号的位置
+
+语法：{list-style：none；}
+说明：去掉列表样式(目的是为了删除系统的样式，自定义其他样式，便于浏览器的适配)
+ -->
