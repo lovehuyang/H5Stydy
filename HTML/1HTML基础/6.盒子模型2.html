@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒子模型2</title>
+	<style type="text/css">
+	.box1 {width: 100px; height: 100px; background: #f00; margin-bottom: 50px;}
+	.box2 {width: 200px; height: 200px; background: #0f0;}
+	h3 {width: 300px; height: 100px;background: #0ff;margin: 0 auto;text-align: center;line-height: 100px;}
+	</style>
+</head>
+<body>
+	<div class = "box1"></div>
+	<div class = "box2"></div>
+	<h3>我是标题</h3>
+</body>
+</html>
+<!-- 
+margin属性
+四个值：上、右、下、左 ：{margin：10px 10px 10px 10px;}
+三个值：上、右左、下 {margin :10px 10px 10px;}
+两个值：上下、右左 {margin ：10px 10px;}
+一个值：上右下左{margin :10px;}
+
+{margin :0 auto;}在浏览器中横向居中
+可单独设置一方向边界 ：{margin-top：10px;}
+					{margin-bottom:10px;}
+					{margin-left:10px;}
+					{margin-right:10px;}
+margin的注意事项：
+
+1、系统会为某些元素设置默认的margin值或者padding值。这对于我们以后尺寸的计算有影响，所以在以后的开发过程中，首先清除掉所有元素的margin和padding值。
+CSS首行代码： *{margin ：0px; paddding :0px;}
+
+2、相邻兄弟元素在垂直方向上的margin值会出现融合的情况，融合后会取两个元素里较大的值作为融合后的值。
+
+3、当父级子元素都设置了margin值时，子级的margin会传递到父级（这里起传递作用的是margin-top属性）。margin传递解决办法：父级使用overfloat:hidedn属性
+ -->

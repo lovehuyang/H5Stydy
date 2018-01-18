@@ -4,12 +4,24 @@
 	<meta charset="UTF-8">
 	<title>盒模型1</title>
 	<style type="text/css">
-	.box1 {width: 600px;height: 300px;background: #fff; border: 10px #000 solid; border-color: #f00 #0f0 #00f #0ff;}
+	.box {width: 960px;border: 5px #000 solid;overflow: hidden;}
+		.box_l {width: 420px; height: 180px;background: #f00; float: left;padding: 20px; border: 10px #ff0 dashed;}
+		.box_c,.box_r {width: 200px;height: 200px;float: left; padding: 20px;}
+		.box_c {background: #0f0;}
+		.box_r {background: #00f url(4.CSS基础/images/list_icon.png ) no-repeat right bottom;}
 	</style>
 </head>
 <body>
-	<div class = "box1">
-		
+	<div class = "box">
+		<div class = "box_l">
+			如果CSS对HTML文档元素生成一个描述该元素在HTML文档布局中所占空间的矩形元素框（element box），那么我们可以形象的将其看作是一个盒子。
+		</div>
+		<div class = "box_c">
+			SS围绕这些盒子产生了一种“盒子模型”的概念，通过定义一系列与盒子相关的属性（内容、填充、边框、边界），可以控制各个盒子乃至整个HTML文档的表现效果和布局结构
+		</div>
+		<div class = "box_r">
+			虽然CSS中没有盒子这个单独的属性对象，但是它却是CSS中无处不在的一个重要的组成部分
+		</div>
 	</div>
 </body>
 </html>
@@ -38,4 +50,16 @@ CSS围绕这些盒子产生了一种“盒子模型”的概念，通过定义�
  左边框 border-left
  右边框 border-right
  上边框 border-top
+
+
+ padding属性	
+ 四个值：上、右、下、左；{padding：10px 20px 30px 40px;}
+ 三个值：上、左右、下 {padding：10px 20px 30px;}
+ 两个值： 上下、左右 {padding：10px 20px;}
+ 一个值：四个方向 {padding：2px;}
+ 可以单独设置一个方向填充
+ padding-top：10px
+ padding-right:10px;
+ padding-bottom:10px;
+ padding-left:10px;
  -->
