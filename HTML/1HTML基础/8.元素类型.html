@@ -3,9 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>元素类型</title>
+	<style type="text/css">
+	span{width: 300px;height: 100px;background: #f00;display: block;}
+	</style>
 </head>
 <body>
-	
+	<span>同智伟业</span>
+	<span>同智伟业</span>
 </body>
 </html>
 <!-- 
@@ -26,6 +30,25 @@
 三、可变元素
 
 需要根据上下文关系确定该元素是块状元素还是内联元素。
-app
+applet - java applet
+button - 按钮
+del - 删除文本
+iframe - inline frame 
+ins - 插入的文本
+map - 图片区块（map）
+object - object对象
+script - 客户端脚本
 
+
+元素类型的转换
+ display属性：用于定义建立布局时元素生成的显示框类型
+ 属性值：none|inline|block|inline-block|list-item|run-in|table|inline-table|table-row-group|table-header-group|table-footer-group|table-row|table-column|table-cell|table-caption|inherit
+
+ block
+ 说明：类似在元素后面添加换行符，也就是说其他元素不能再其后面并列显示
+
+ 特征：不设置宽度时，宽度撑满一行
+ 独占一行
+ 支持宽高
+ 当设置了float属性之后就相当于给该元素加了display：block属性
  -->
