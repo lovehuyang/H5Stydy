@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>元素的定位设置</title>
+	<style type="text/css">
+	body {background:green;}
+	.box1 {width: 200px; height: 200px; background:#f00;}
+	.box2 {background: #ff0;width: 150px; height: 150px;}
+	span {background: #0ff;position: absolute; right: 30px;}
+
+	</style>
+</head>
+<body>
+	<div class = "box1"> box1
+		<div class = "box2">box2
+			<span>哈</span>
+		</div>
+	</div>
+	
+</body>
+</html>
+<!-- 
+position属性：定义建立元素布局所用的定位机制
+语法： {position：static/absolute/relative/fixde}
+
+说明：
+static：默认值。没有定位，元素出现在正常流中
+absolute：生成绝对定位的元素，相对于static定位以外的第一个父元素进行定位。元素的位置通过left、top、right以及bottom进行规定
+relative：生成相对定位元素，相对于其正常位置进行定位
+fixed：生成绝对定位的元素，相对于浏览器窗口进行定位。元素的位置通过left、top、right以及bottom进行规定
+
+ -->

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+
+		</style>
+
+		<script type="text/javascript">
+		/*
+			1、与
+				表达式1 && 表达式2
+				【注】两个表达式同时为真结果才为真
+				【短路操作】当表达式1为0时，第二个表达式2就不会执行
+				直接判断整个与运算为false
+
+			2、或
+				表达式1 || 表达式2
+				【注】两个表达式中有一个为真结果才为真
+				【短路操作】当表达式1为1时，第二个表达式2就不执行，直接返回true
+
+			3、非
+				！表达式
+				【注】表达式为假的时候才返回真
+				可用于任何值。无论是什么类型的值，非运算最终会返回一个bool类型的结果。其流程是：先将这个值转成bool值，然后取反
+
+				①操作数是一个空字符串，返回true
+				②操作数是一个非空字符串，返回false
+				③操作数是数值0，返回true
+				④操作数是任意非0的数值，返回false
+				⑤操作数是NaN,返回true
+				⑥操作数是undefined，返回true
+				
+		*/
+
+		// alert(a);
+		// alert( 5 < 3 && alert(a));// false  [短路操作]
+		// alert(5 < 3 || alert(a));// 报错
+		alert(5 > 3 || alert(a));// true [短路操作]
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
