@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script type="text/javascript">
+		/*
+			【原理】
+			前后两个数两两进行比较，如果符合交换条件则交换顺序。直到所有的数据排序完成，结束比较
+			【注】每一轮取出一个最大值放在正确的位置
+		*/
+
+		var arr = [9,8,7,6,5,4];
+
+		for(var i = 0; i < arr.length  - 1; i ++){// 总的比较次数
+			for (var j = 0; j < arr.length - 1 - i; j++) {
+					// 判断前后两个数是否符合交换条件
+					if(arr[j] > arr[j + 1]){
+						var temp = arr[j + 1];
+						arr[j + 1] = arr[j];
+						arr[j] = temp;
+					}
+				};
+
+		};
+		alert(arr);
+
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

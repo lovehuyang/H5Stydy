@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script type="text/javascript">
+		window.onload = function(){
+			var oBtn = document.getElementById("btn");
+			var oTxt = document.getElementById("txt");
+
+			
+			oBtn.onclick = function(){
+				oTxt.value = "";// 清空文本框的内容
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<input type = "text" value = "默认的文字" id = "txt">
+		<input type = "button" value = "清空" id = "btn">
+	</body>
+</html>

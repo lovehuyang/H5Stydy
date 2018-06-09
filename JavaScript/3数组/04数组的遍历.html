@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script type="text/javascript">
+		var arr = [1,2,3,5,7];
+		alert(arr);
+
+		/*
+			数组遍历：数组和循环的结合使用。js中数组和循环是绝配
+		*/
+
+		//for循环赋值
+		var arr1 = [];
+		for (var i = 0; i < 10; i++) {
+				arr1[i] = i * i;
+		};
+		alert(arr1);
+
+		// 以下为通过循环给数组的每个元素赋值。随机数
+		/*
+			随机数
+			Math.random()可以随机0-1之间的任意的数
+		*/
+		var arr2 = [];
+		for (var i = 0; i < 10; i++) {
+			arr2[i] = Math.random();
+		}
+		alert(arr2);
+
+
+		//
+		var arr3 = ["red","blue","orange"];
+		for (var i = 0; i < arr3.length; i++) {
+			document.write(arr3[i] + '<br/>'); 
+		};
+
+		// 使用for...in 遍历
+		for (var i in arr3){// 这里的i是每次遍历的下标
+			document.write(arr3[i] + '<br />');
+		}
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
