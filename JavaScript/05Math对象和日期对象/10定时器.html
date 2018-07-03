@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>定时器</title>
+		<script type="text/javascript">
+		/*
+			setInterval()
+			
+			【格式】
+			
+			写法一：setInterval（函数，毫秒数）；
+			
+			写法二：setInterval（function（）{
+				
+					// 我们想要做的操作
+			
+					}，毫秒数）；
+			功能：每个所传参数的毫秒数就调用一次所传参数的函数
+			返回值：当前页面上对于这个定时器的唯一标识，定时器ID
+
+
+			clearInterval（）取消定时器
+			参数：定时器的ID
+
+		*/
+
+		var i = 0;
+		function show(){
+			document.write(i ++ +"<br />");
+		}
+
+		window.onload = function(){
+			var oBtn = document.getElementById("btn");
+			oBtn.onclick = function(){
+				var i = 0;
+				var time = setInterval(function(){
+					document.write(i ++ +"<br />");
+					if (i > 5) {
+						clearInterval(time);
+						document.write("定时器被销毁了");
+					};
+
+				},1000);//函数传参
+
+			}
+
+		}
+
+		</script>
+	</head>
+	<body>
+		<input type = "button" id = "btn" value = "按钮">
+	</body>
+</html>

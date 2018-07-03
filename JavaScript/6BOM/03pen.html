@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script type="text/javascript">
+		/*
+			window.open()
+			open()
+			1、要加载的URL
+			2、窗口的名称或者窗口的目标
+			3、一串具有特殊意义的字符串
+		*/
+
+		window.onload = function(){
+
+			var btn1 = document.getElementById("btn1");
+			btn1.onclick = function(){
+
+				// 【一个参数】调用open方法会打开新的窗口加载URL
+				open("http://www.baidu.com");
+
+			};
+
+			var btn2 = document.getElementById("btn2");
+			btn2.onclick = function(){
+
+				// 【两个参数】第二个参数是给打开的新窗口起一个名字，然后以后再去加载URL就会在这个起好名字的目标窗口中打开URL
+				open("http://www.baidu.com","百度");
+
+			};
+			var btn3 = document.getElementById("btn3");
+			btn3.onclick = function(){
+
+				// 【三个参数】第三个参数数是弹出页面的属性设置
+				open("http://www.baidu.com","百度","width = 400,height = 400, top = 200,left = 200");
+
+			};
+		};
+
+		</script>
+	</head>
+	<body>
+		<input type = "button" value = "一个参数" id = "btn1">
+		<input type = "button" value = "两个参数" id = "btn2">
+		<input type = "button" value = "三个参数" id = "btn3">
+	</body>
+</html>

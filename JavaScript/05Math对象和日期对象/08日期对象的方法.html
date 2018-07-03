@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>123</title>
+		<script type="text/javascript">
+		/*
+			凡是涉及到毫秒的都是从1970年开始
+		*/
+
+		var d = new Date();
+		alert(d.getTime());
+
+		var d2 = new Date(d.getTime());
+		alert(d2);
+
+		/*
+			Date.parse("2015-08-24");
+			参数：是一个日期格式的字符串
+			功能：返回这个日期距离1970年的毫秒数
+		*/
+
+		var time = Date.parse("2015-08-24");
+		alert(time);
+		var d3 = new Date(time);
+		alert(d3);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

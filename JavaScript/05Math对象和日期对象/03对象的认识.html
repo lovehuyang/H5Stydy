@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script type="text/javascript">
+
+		/*
+			对象也是一种数据类型
+			分析 ： 数据存储的历程
+
+			【注】什么是对象，其实就是一种类型，即【引用】类型。而对象就是【引用类型】的实例。在ECMASctipt中引用类型是一种【数据结构】，用于将【数据和功能】组织在一起
+		*/
+
+		/*
+			对象的创建
+			对象中存储的数据叫做对象的属性
+			对象中存储的函数叫对象的方法
+		*/
+		//创建方法1 、使用new运算符创建对象
+		var person = new Object();
+		// 给对象添加数据（属性）
+		person.name = "huluyang";
+		person.age = 30;
+		// 给对象添加方法
+		person.showName = function(){
+			alert(person.name);
+		}
+
+		// 如果要访问对象的属性和方法
+		alert(person.name);
+		person.showName();
+
+		// 创建方法2 、省略new
+		var person2 = Object();
+
+		// 创建方法3、使用常量/字面量去创建对象(常用)
+		var person3 = {};
+		person3.name = "hanying"
+		person3["sex"] = "男"；
+		person3.age = 18;
+		person3.showName = function(){
+			alert(person3.name);
+			alert(person3["name"]);
+		}
+		person3.showName();
+
+
+		/*
+			delete  删除对象的属性
+		*/
+		delete person3.name;// 删除“name”属性
+
+
+		</script>
+	</head>
+	<body>
+		
+</body>
+</html>

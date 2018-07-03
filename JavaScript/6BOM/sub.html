@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sub</title>
+	<style type="text/css">
+	body{
+		background-color: red
+	}
+	</style>
+	<script type="text/javascript">
+
+	window.onload = function(){
+
+		/*
+			opener 打开当前窗口的父窗口的window对象
+		*/
+		var btn1 = document.getElementById("btn1");
+		btn1.onclick = function(){
+			alert(window.opener);
+		}
+	}
+	</script>
+</head>
+<body>
+	<input type = "button" value = "按钮" id = "btn1">
+</body>
+</html>
